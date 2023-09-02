@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            position: fixed;
+            width: 100%;
+            height: 70px;
+            background-color: lightskyblue;
+            padding: 15px 20px;
+            
+        }
+        .container nav{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .clr1{
+            width: 100%;
+            height: 50vh;
+            background-color: red;
+        }
+        .clr2{
+            width: 100%;
+            height: 50vh;
+            background-color: green;
+        }
+        .clr3{
+            width: 100%;
+            height: 50vh;
+            background-color: black;
+        }
+        .container nav ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container nav ul li {
+            border: 2px solid white;
+            font-size: larger;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            /* transition: 0.4s ease; */
+        }
+        .container nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .a{
+            display: none;
+        }
+        .container nav ul li:hover{
+            border: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(119, 0, 255);
+            border-bottom: 3px solid crimson;
+        }
+        .container nav ul li:hover .a{
+            display: inline-block;
+            font-size: medium;
+        }
+        .container nav ul l img{
+            width: 60px;
+            height: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <l><img src="img/forest.jpg" alt=""></l>
+                <li><a href="#">Home</a><br>
+                    
+                </li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About us</a><br>
+                    
+                </li>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="clr1"></div>
+        <div class="clr2"></div>
+        <div class="clr3"></div>
+</body>
+</html>

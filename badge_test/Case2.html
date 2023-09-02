@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container .com{
+            width: 70%;
+            height: fit-content;
+            padding: 10px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            transition: 0.3s ease;
+        } 
+        .container .com h1{
+            color: red;
+        }
+        .container .com p{
+            display: none;
+        }
+        .container .com:hover{
+            background-color: bisque;
+
+        }
+        .container .com:hover p{
+            display: block;
+            text-align: justify;
+            font-size: large;
+            font-weight: 600;
+        }
+        span{
+            float: right;
+            font-size: large;
+            background-color: rgb(53, 53, 234);
+            padding: 10px ;
+            
+        }
+        .container .com:hover span{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sec1 com">
+            <h1>About the Company 1</h1>
+            <span>Know more</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptatum beatae voluptates quae culpa quod. Placeat cumque, earum, illo amet recusandae mollitia eius quaerat assumenda molestiae in explicabo sit eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque non, ipsam rerum at repellendus repudiandae. Cum repudiandae, officiis alias possimus asperiores provident ipsum facere eligendi voluptatem quas magni voluptas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate debitis harum doloribus in voluptatum molestias omnis dolore, voluptatem minima repellendus consequuntur eos sit repellat et maiores suscipit? Itaque, magni atque.</p>
+
+        </div>
+        <div class="sec1 com">
+            <h1>About the Company 2</h1>
+            <span>Know more</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptatum beatae voluptates quae culpa quod. Placeat cumque, earum, illo amet recusandae mollitia eius quaerat assumenda molestiae in explicabo sit eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque non, ipsam rerum at repellendus repudiandae. Cum repudiandae, officiis alias possimus asperiores provident ipsum facere eligendi voluptatem quas magni voluptas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate debitis harum doloribus in voluptatum molestias omnis dolore, voluptatem minima repellendus consequuntur eos sit repellat et maiores suscipit? Itaque, magni atque.</p>
+
+        </div>
+        <div class="sec1 com">
+            <h1>About the Company 3</h1>
+            <span>Know more</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptatum beatae voluptates quae culpa quod. Placeat cumque, earum, illo amet recusandae mollitia eius quaerat assumenda molestiae in explicabo sit eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque non, ipsam rerum at repellendus repudiandae. Cum repudiandae, officiis alias possimus asperiores provident ipsum facere eligendi voluptatem quas magni voluptas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate debitis harum doloribus in voluptatum molestias omnis dolore, voluptatem minima repellendus consequuntur eos sit repellat et maiores suscipit? Itaque, magni atque.</p>
+
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 70px;
+            background-color: lightskyblue;
+            padding: 15px 20px;
+            
+        }
+        .container nav{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .container nav ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container nav ul li {
+            
+            font-size: larger;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-sizing: border-box;
+            /* transition: 0.4s ease; */
+        }
+        .container nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .a{
+            display: none;
+        }
+        .container nav ul li:hover{
+            background-color: rgb(119, 0, 255);
+            border-bottom: 3px solid crimson;
+        }
+        .container nav ul li:hover .a{
+            display: inline-block;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a><br>
+                    <a class="a" href="#">1.Main menu</a>
+                    <a class="a" href="#">2.Sub menu</a>
+                </li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About us</a><br>
+                    <a class="a" href="#">Thank you</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

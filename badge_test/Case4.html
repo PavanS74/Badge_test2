@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container form{
+            padding: 20px;
+            background-color: rgb(229, 98, 176) ;
+            border: 2px solid black;
+            border-radius: 30px;
+        }
+        .container form table tr{
+            padding: 20px;
+        }
+        .container form table tr td{
+            height: 30px;
+        }
+        .container form table tr td label{
+            color: blue;
+            font-size: large;
+            font-weight: bold;
+        } 
+        .container form table tr td input{
+            border: 2px solid black;
+            padding: 3px 8px ;
+            border-radius: 10px;
+            transition: 0.2s ease;
+        }
+        .container form table tr td input:hover{
+            background-color: aqua;
+            
+        }
+        .container form table tr td input:active{
+            background-color: red;
+            transition: 0.2s ease;
+            
+        }
+        .container form table tr td textarea{
+            border: 2px solid black;
+            padding: 3px 8px ;
+            border-radius: 10px;
+            transition: 0.2s ease;
+        }
+        .container form table tr td textarea:active{
+            background-color: bisque;
+        }
+        .container form table tr td .a{
+            color: black;
+            font-weight: 200;
+        }
+        .container form  center button{
+            padding: 8px 15px ;
+            background-color: crimson;
+            border: none;
+            font-size: large;
+            font-weight: bolder;
+            border-radius: 10px;
+            margin-top: 10px;
+            transition: 0.3s ease-in-out;
+
+        }
+        .container form  center button:hover{
+            background-color: rgb(31, 31, 239);
+        }
+        .container form  center button:active{
+            background-color: rgb(11, 205, 11);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form autocomplete="off" >
+            <table>
+                <tr>
+                    <td> <label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name" value="" required ></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail</label></td>
+                    <td><input type="email" id="email" name="email" value="" required></td>
+                </tr>
+                <tr>
+                    <td><label for="number">Mobile</label></td>
+                    <td><input type="number" id="number" name="number" value="" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td><label for="male" class="a">Male</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="female" class="a">Female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Language</label></td>
+                    <td><label for="lang1" class="a" >Kannada</label><input type="checkbox" name="lang1" id="lang1" value="Kannada">
+                        <label for="lang2"class="a" >English</label>
+                        <input type="checkbox" name="lang2" id="lang2" value="English"> <label for="lang3" class="a">Hindi</label>
+                        <input type="checkbox" name="lang3" id="lang3" value="Hindi"></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+                </tr>
+                
+            </table>
+            <center><button type="submit">Submit</button></center>
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </form>
+    </div>
+</body>
+</html>
